@@ -3,7 +3,6 @@ let stickyMenu = {
 
     init: function () {
         stickyMenu.nav = document.getElementById("banner");
-
         if (window.innerWidth > "1034") {
             window.addEventListener("scroll", stickyMenu.sticky);
         }    
