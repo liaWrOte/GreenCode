@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No Fucking JS</title>
+    <title>GreenCode</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
@@ -36,7 +42,7 @@
             <ul class="nav-items">
                 <li class="nav-item">
                     <a href="#section-2">
-                        Who are we
+                        Who we are
                     </a>
                     </li>
                 <li class="nav-item">
@@ -113,7 +119,7 @@
                     </div>
 
                     <span class="see-more">
-                        <a href="#">Comment ça marche</a>
+                        <a href="#section-3">Comment ça marche</a>
                         <div class="see-more-arrow"></div>
                     </span>
 
@@ -311,19 +317,19 @@
             <a class="anchor-section-6" id="section-6"></a>
             <h2>Start now</h2>
             <div class="downloads">
-                <a href="#" class="download-button">
+                <a href="#section-6" class="download-button quote-trigger">
                     <div class="download-icon">
                         <img src="./assets/images/SVG/windows.icon.svg" alt="icône de windows">
                     </div>
                     <div class="download-text">Download for Windows</div>
                 </a>
-                <a href="#" class="download-button">
+                <a href="#section-6" class="download-button quote-trigger">
                     <div class="download-icon">
                         <img src="./assets/images/SVG/apple.icon.svg" alt="icône de apple">
                     </div>
                     <div class="download-text">Download for MacOS</div>
                 </a>
-                <a href="#" class="download-button">
+                <a href="#section-6" class="download-button quote-trigger">
                     <div class="download-icon">
                         <img src="./assets/images/SVG/linux.icon.svg" alt="icône de linux">
                     </div>
@@ -357,6 +363,10 @@
             <span class="sparkle sparkle-3"></span>
         </div>
 
+        <!-- Funny Quote -->
+        <p class="funny-quote">This is a fake showcase site, you know that right ?  😏</p>
+
+
     </main>
 
     <footer class="footer section-padding">
@@ -367,7 +377,7 @@
             </div>
 
             <div class="see-more">
-                <a href="#">How it works</a>
+                <a href="#section-3">How it works</a>
                 <div class="see-more-arrow"></div>
             </div>
             
@@ -376,15 +386,31 @@
         <div class="legal">
 
             <ul class="footer-nav-items">
-                <li class="nav-item">Who are we</li>
-                <li class="nav-item">How it works</li>
-                <li class="nav-item">Plans</li>
-                <li class="nav-item">Partners</li>
+                <li class="nav-item">
+                    <a href="#section-2">
+                        Who we are
+                    </a>
+                    </li>
+                <li class="nav-item">
+                    <a href="#section-3">
+                        How it works
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section-4">
+                        Plans
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section-5" >
+                        Partners
+                    </a>
+                </li>
             </ul>
            
             <ul>
-                <li>Mentions légales</li>
-                <li>CGU</li>
+                <li class="quote-trigger">Mentions légales</li>
+                <li class="quote-trigger">CGU</li>
             </ul>
         </div>
 
@@ -393,6 +419,7 @@
     <script src="./javascript/stickyMenu.js"></script>
     <script src="./javascript/hamburgerMenu.js"></script>
     <script src="./javascript/howItWorksEffect.js"></script>
+    <script src="./javascript/funnyQuote.js"></script>
 </body>
 
 </html>

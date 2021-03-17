@@ -133,7 +133,7 @@ a.anchor {
 .logo-name {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin-left: 5px;
 }
 
@@ -163,6 +163,8 @@ top: unset;
 .blob-center-menu {
   display: none;
 }
+
+
 
 /* --- Main --- */
 
@@ -309,7 +311,6 @@ top: unset;
 .price-grid {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   text-align: center;
 }
 
@@ -387,6 +388,7 @@ top: unset;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    padding: 2rem 0;
   }
   
   .carousel-slide {
@@ -417,7 +419,7 @@ top: unset;
     margin: 0 1rem;
     border-radius: 15px;
     padding: 2rem 1rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 2px 7px 19px -5px rgba(0,0,0,0.61);
     -webkit-box-shadow: 2px 7px 19px -5px rgba(0,0,0,0.61);
     -moz-box-shadow: 2px 7px 19px -5px rgba(0,0,0,0.61);
@@ -778,6 +780,30 @@ top: unset;
     }
   }
 
+  /* funny quote */
+
+  .funny-quote {
+    width: fit-content;
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 7px;
+    transform: translateX(-100%);
+    box-shadow: 2px 7px 19px -5px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 2px 7px 19px -5px rgba(0,0,0,0.61);
+    -moz-box-shadow: 2px 7px 19px -5px rgba(0,0,0,0.61);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .funny-quote-show {
+    transform: translateX(-7px);
+    transition: transform 0.5s ease-out;
+  }
+
   /* Footer */
   .footer {
     background-color: #25282C;
@@ -788,7 +814,7 @@ top: unset;
 
   .footer-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
   }
@@ -797,6 +823,7 @@ top: unset;
   .footer-nav-items {
     display: flex;
     flex-direction: column;
+    color: #fff;
   }
 
   .legal .see-more {
@@ -811,7 +838,13 @@ top: unset;
   }
 
   .legal .nav-item {
-    padding: 0;
+    padding: 0.3rem 0;
+    font-size: 1.2rem;
+    color: #fff;
+   }
+
+   .legal .nav-item:hover {
+    color:#636363;
    }
 
    .legal:last-child {

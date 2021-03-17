@@ -238,21 +238,30 @@
         padding: 0;
     }
 
+    .carousel {
+        overflow: overlay;
+        height: auto;
+    }
+
     .carousel-viewport {
         flex-direction: row;
     }
 
     .carousel-slide {
         flex-direction: row;   
-        transform: translateX(33%);
+        transform: translateX(110%);
     }
 
-    .section-5 h2, p {
+    .section-5 > h2, p {
         width: 100%;
     }
 
     .testimonies {
         flex-direction: row;
+    }
+
+    .testimony-item {
+        flex: 0 0 100%;
     }
 
 #carousel-slide1 {
@@ -285,6 +294,7 @@
 
     .section-6 {
         margin: 0 2rem 5rem 2rem;
+        padding: 3rem 1rem;
     }
 
     .download-button {
