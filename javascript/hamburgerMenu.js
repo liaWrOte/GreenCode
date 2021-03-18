@@ -26,6 +26,7 @@ let hamburgerMenu = {
 
     closeNav:function () {
         hamburgerMenu.nav.classList.remove("active");
+        hamburgerMenu.icon.classList.toggle("menu-open");
     }
 };
 
