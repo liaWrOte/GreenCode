@@ -62,7 +62,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -108,7 +108,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -171,6 +171,19 @@ textarea {
   margin: 0; /* 2 */
 }
 
+button {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -230,7 +243,9 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  border-width: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /**
@@ -356,20 +371,43 @@ template {
 /*** box sizing border-box for all elements ***/
 *,
 *::before,
-*::after { box-sizing: border-box; }
-a { }
-button { background-color: transparent; color: inherit; border-width: 0; padding: 0; cursor: pointer; }
-figure { margin: 0; }
-input::-moz-focus-inner { border: 0; padding: 0; margin: 0; }
+*::after {
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
 ul,
 ol,
-dd { margin: 0; padding: 0; list-style: none; }
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 { margin: 0; font-size: inherit; font-weight: inherit; }
-p { margin: 0; }
-cite { font-style: normal; }
-fieldset { border-width: 0; padding: 0; margin: 0; }
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
