@@ -210,7 +210,10 @@ nav .action-button {
 }
 
 .steps-item span:not(.steps-item-number) {
-  display: none;
+  display: block;
+  padding: 0.5rem;
+  margin-top: -0.5rem;
+  background-color: #25282c;
 }
 
 /* section-4 */

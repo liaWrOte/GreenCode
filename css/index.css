@@ -853,7 +853,7 @@ a.anchor {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-nav-items {
