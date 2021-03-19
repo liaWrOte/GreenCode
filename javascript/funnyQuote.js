@@ -20,4 +20,4 @@ let funnyQuote = {
 
 };
 
-document.addEventListener("DOMContentLoaded", funnyQuote.init);
+export default funnyQuote ;

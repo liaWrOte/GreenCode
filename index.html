@@ -14,10 +14,10 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 741px) and (max-width: 1034px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 740px)" href="./css/mobile.css">
 </head>
 
 <body>
@@ -119,10 +119,12 @@
                     </div>
                     </div>
 
-                    <span class="see-more">
-                        <a href="#section-3">Comment ça marche</a>
-                        <div class="see-more-arrow"></div>
-                    </span>
+                    <div class="see-more-parent">
+                        <div class="see-more">
+                            <a href="#section-3">Comment ça marche</a>
+                            <div class="see-more-arrow"></div>
+                        </div>
+                    </div>
 
         </section>
 
@@ -160,7 +162,7 @@
             <div class="price-grid">
 
                 <div class="price-grid-item">
-                    <h4>Free to give</h4>
+                    <h4>Free to give for free</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <p><span class="price">0&euro;</span></p>
                     <ul class="items-included">
@@ -378,10 +380,13 @@
                 <span class="logo-name">GreenCode</span>
             </div>
 
-            <div class="see-more">
-                <a href="#section-3">How it works</a>
-                <div class="see-more-arrow"></div>
+            <div class="see-more-parent">
+                <div class="see-more">
+                    <a href="#section-3">How it works</a>
+                    <div class="see-more-arrow"></div>
+                </div>
             </div>
+            
             
         </div>
         
@@ -421,10 +426,7 @@
 
     </footer>
 
-    <script src="./javascript/stickyMenu.js"></script>
-    <script src="./javascript/hamburgerMenu.js"></script>
-    <script src="./javascript/howItWorksEffect.js"></script>
-    <script src="./javascript/funnyQuote.js"></script>
+    <script type="module" src="./javascript/index.js"></script>
 </body>
 
 </html>

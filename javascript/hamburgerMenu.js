@@ -30,4 +30,4 @@ let hamburgerMenu = {
     }
 };
 
-document.addEventListener('DOMContentLoaded', hamburgerMenu.init);
+export default hamburgerMenu;

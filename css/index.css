@@ -117,6 +117,12 @@ a.anchor {
   z-index: 999;
 }
 
+.banner-active {
+  box-shadow: 2px 7px 19px -5px rgba(0, 0, 0, 0.21);
+  -webkit-boxshadow: 2px 7px 19px rgba(0, 0, 0, 0.21);
+  -moz-boxshadow: 2px 7px 19px -5px rgba(0, 0, 0, 0.21);
+}
+
 .nav {
   display: flex;
   position: relative;
@@ -219,11 +225,27 @@ a.anchor {
   float: none;
 }
 
+.see-more-parent {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .see-more {
-  display: table;
+  display: block;
+  width: 200px;
+  position: relative;
   margin: 2rem auto 0 auto;
-  text-align: center;
   color: #5762fd;
+}
+
+.see-more a {
+  margin-right: 0;
+  transition: margin-right 0.2s ease-in-out;
+}
+
+.see-more a:hover {
+  margin-right: 0.3rem;
+  transition: margin-right 0.2s ease-in-out;
 }
 
 .see-more-arrow {
@@ -364,19 +386,6 @@ a.anchor {
   text-align: center;
 }
 
-.carousel-viewport::-webkit-scrollbar {
-  width: 0;
-}
-
-.carousel-viewport::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.carousel-viewport::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
 .carousel {
   position: relative;
   filter: drop-shadow(0 0 10px #0003);
@@ -390,6 +399,19 @@ a.anchor {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   padding: 2rem 0;
+}
+
+.carousel-viewport::-webkit-scrollbar {
+  width: 0;
+}
+
+.carousel-viewport::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carousel-viewport::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
 }
 
 .carousel-slide {
