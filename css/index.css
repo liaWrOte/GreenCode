@@ -225,11 +225,27 @@ a.anchor {
   float: none;
 }
 
+.see-more-parent {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .see-more {
-  display: table;
+  display: block;
+  width: 200px;
+  position: relative;
   margin: 2rem auto 0 auto;
-  text-align: center;
   color: #5762fd;
+}
+
+.see-more a {
+  margin-right: 0;
+  transition: margin-right 0.2s ease-in-out;
+}
+
+.see-more a:hover {
+  margin-right: 0.3rem;
+  transition: margin-right 0.2s ease-in-out;
 }
 
 .see-more-arrow {
