@@ -364,19 +364,6 @@ a.anchor {
   text-align: center;
 }
 
-.carousel-viewport::-webkit-scrollbar {
-  width: 0;
-}
-
-.carousel-viewport::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.carousel-viewport::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
 .carousel {
   position: relative;
   filter: drop-shadow(0 0 10px #0003);
@@ -390,6 +377,19 @@ a.anchor {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   padding: 2rem 0;
+}
+
+.carousel-viewport::-webkit-scrollbar {
+  width: 0;
+}
+
+.carousel-viewport::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carousel-viewport::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
 }
 
 .carousel-slide {
