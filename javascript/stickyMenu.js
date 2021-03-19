@@ -1,11 +1,9 @@
 
-let stickyMenu = {
+let stickyMenu= {
 
     init: function () {
         stickyMenu.nav = document.getElementById("banner");
-        if (window.innerWidth > "1034") {
-            window.addEventListener("scroll", stickyMenu.sticky);
-        }    
+        window.addEventListener("scroll", stickyMenu.sticky);
     },
 
     sticky: function () {
@@ -21,4 +19,4 @@ let stickyMenu = {
     },
 };
 
-document.addEventListener('DOMContentLoaded', stickyMenu.init);
+export default stickyMenu;

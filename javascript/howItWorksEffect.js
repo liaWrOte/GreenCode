@@ -23,6 +23,7 @@ let howItWorksEffect = {
             howItWorksEffect.arrow[i].classList.remove("see-more-arrow-translate");
         }
     },
+
 };
 
-document.addEventListener('DOMContentLoaded', howItWorksEffect.init);
+export default howItWorksEffect;
