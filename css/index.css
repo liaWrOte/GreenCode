@@ -117,6 +117,12 @@ a.anchor {
   z-index: 999;
 }
 
+.banner-active {
+  box-shadow: 2px 7px 19px -5px rgba(0, 0, 0, 0.21);
+  -webkit-boxshadow: 2px 7px 19px rgba(0, 0, 0, 0.21);
+  -moz-boxshadow: 2px 7px 19px -5px rgba(0, 0, 0, 0.21);
+}
+
 .nav {
   display: flex;
   position: relative;
