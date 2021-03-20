@@ -341,6 +341,10 @@ p {
   align-items: center;
 }
 
+.footer-nav {
+  align-items: center;
+}
+
 .footer-nav > *,
 .legal > * {
   margin-bottom: 1rem;
